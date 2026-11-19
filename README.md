@@ -14,30 +14,3 @@ Dark mode: the moon/sun button in the navbar. It follows your system setting at 
 Drag and drop: drag a note onto another to change the order.
 Search: filters notes as you type.
 Saved automatically: notes, their order, their colours and the theme survive a refresh.
-Project structure
-keep-react/
-├── index.html
-├── package.json
-├── vite.config.js
-├── netlify.toml
-└── src/
-    ├── main.jsx            starts the app
-    ├── App.jsx             holds the notes, search and theme
-    ├── data.js             colours and starter notes
-    ├── index.css           all the styling
-    ├── hooks/
-    │   └── useLocalStorage.js
-    └── components/
-        ├── Navbar.jsx
-        ├── CreateNote.jsx
-        ├── NotesGrid.jsx
-        ├── NoteCard.jsx
-        ├── ColorPicker.jsx
-        └── Icon.jsx
-Deploy to Netlify
-Push the project to a GitHub repository.
-On Netlify choose Add new site, Import an existing project and pick the repository.
-Netlify reads netlify.toml: the build command is npm run build and the publish folder is dist.
-Click Deploy.
-Live link
-Add your Netlify link here after deploying.
